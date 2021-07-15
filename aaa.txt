@@ -1,0 +1,20 @@
+dict1 = {'A':'Hello','B':'World','C':'Buddy'}
+s = input().split()
+count =0
+for i in range(len(s)):
+    if s[i] == 'and':
+        count += 1
+         
+    if s[i] == 'or':
+        if s[i-1] in dict1:
+            print(dict1[s[i -1 ]])
+        else:
+            print(dict1[s[i + 1]])
+if (count == 2):
+    print(dict1['A'] + dict1['B']+dict1['C'])
+else:
+    print(dict1['A'] + dict1['B'])
+
+
+            
+            
